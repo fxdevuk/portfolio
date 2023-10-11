@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;   
+}
+
+video {
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+#big-container {
+    margin: 0 20rem 0 20rem;
+}
+
+.nav-container {
+    display: flex;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 1.3rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #002850;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.1em;  
+}
+
+.nav-list-hover a:hover {
+    text-decoration: none;
+    color: #500048;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    color: #500048;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#white-logo {
+    width: 3.5rem;
+}
+
+.list-item {
+    padding: 0 2.5rem 0 2.5rem;
+}
+
+i {
+    font-size: 1.7em;
+    color: #002850;
+}
+
+.fa-square-github {
+    font-size: 1.95rem;
+}
+
+.fa-envelope {
+    font-size: 2.2rem;
+}
+
+/* screens */
+
+#home {
+    text-indent: 2em;
+}
+
+.screens-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.screens {
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start; 
+    background-color: #f1b4bb4a;
+}
+
+/* screen 1 */
+
+.container-home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+#about {
+    width: 24rem;
+    height: 24rem;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #002850;
+    color: #ebe6fe;
+    padding: 1rem 1rem 0 1rem;
+    line-height: 1.35rem;
+}
+
+.logo {
+    width: 24rem;
+    height: auto;
+}
+
+#landing {
+    display: flex;
+    flex-direction: column;
+}
+
+#tech-icons {
+    margin-top: 1rem;
+}
+
+#tech-icons_list {
+    display: flex;
+    position: relative;
+    top: 0;
+
+}
+
+.tech-icons_items {
+    list-style: none;
+}
+
+/* tech icons */
+
+.fa-html5 {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-html5-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0; 
+}
+
+.fa-css3-alt {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-css3-alt-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0;
+}
+
+.fa-js {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-js-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0;
+}
+
+.fa-python {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-python-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0;
+}
+
+.fa-database {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-database-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0;
+}
+
+.fa-git {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-git-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0;
+}
+
+.fa-figma {
+    font-size: 6.5em;
+    padding: 0.6rem;
+}
+
+.fa-figma-hover:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    padding: 0.6rem;
+    color: #FDF0F0;
+}
+
+
+/* screen projects */
+
+#projects {
+    min-height: 100vh; /* Ensure the section occupies the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* screen contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-contact {
+    width: 25rem;
+    height: 2rem;
+    margin: 0 0 1rem 0;
+    border: none;
+    border-radius: .2rem; 
+}
+
+::placeholder {
+    font-family:'Montserrat', sans-serif;
+    color: #0028507e;
+}
+
+#subject {
+    height: 20rem;
+    font-family:'Montserrat', sans-serif;
+    color: #0028507e;;
+}
+
+#submit-btn {
+    background-color: #002850bd;
+    border: none;
+    border-radius: 5rem;
+    color: #ebe6fe;
+}
+
+.submit-btn-hover:active {
+    transform: scale(0.97);
+    transition-duration: 0.2s;
+
+}
+
+h3 {
+    font-family:'Montserrat', sans-serif;
+    color: #002850;
+    margin-bottom: 0.7rem;
+}
+
+
+
+

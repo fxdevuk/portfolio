@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;900&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb70851684.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/icon_blue_FX.png">
+</head>
+
+<body>
+    <video autoplay loop muted playsinline>
+        <source src="img/backgroung_bridge_fernandoxavier_portfolio.mp4" type="video/mp4">
+    </video>
+    
+    <div id="big-container">
+        <main class="screens-container">
+            <nav class="nav-container">
+                <ul class="nav-list nav-left nav-list-hover">
+                    <a href="#landing"><li class="list-item"><img src="img/icon_blue_FX.png" alt="Fernando Xavier small icon" id="white-logo"></li></a>
+                    <a href="#projects"><li class="list-item">Projects</li></a>
+                    <a href="img/FernandoXavier_2023_CV.docx.pdf" download="CV_FernandoXavier" title="Download"><li class="list-item">CV</li></a>
+        
+                </ul>
+                <ul class="nav-list nav-right">
+                    <a href="https://github.com/fxdevuk" target="_blank"><li class="icons list-item"><i class="fa-brands fa-square-github nav-right-hover" alt="Github icon"></i></li></a>
+                    <a href="https://www.linkedin.com/in/fernando-xavier-788151243/" target="_blank"><li class="icons list-item"><i class="fa-brands fa-linkedin nav-right-hover" alt="Linkedin icon"></i></li></a>
+                    <a href="#contact"><li class="icons list-item"><i class="fa-solid fa-envelope nav-right-hover" alt="Small envelope icon"></i></li></a>
+                </ul>
+            </nav>
+
+            <div class="screens" id="landing">
+                <div class="container-home" id="home">
+                    <img class="logo" src="img/FX_squared_small_logo.png" alt="Logo Fernando Xavier">
+                    <p id="about">I'm an aspiring software developer with a diverse educational background. My journey led me to rediscover my childhood passion for programming. I've just finished a Digital Skills Bootcamp at JustIT Training, specialising in web and software development.<br>
+                        My primary aim is to excel as a Developer, capitalising on my creative problem-solving skills.
+                        I'm enthusiastic about applying my technical expertise and innovative thinking to address new challenges. If you're interested in potential collaborations or would like to connect, please feel free to reach out.<br>
+                        References are available upon request.
+                    </p>
+                </div>
+                <div id="tech-icons">
+                    <ul id="tech-icons_list">
+                        <li class="tech-icons_items"><i class="fa-brands fa-html5 fa-html5-hover" title="HTML5" alt="HTML5 icon"></i></li>
+                        <li class="tech-icons_items"><i class="fa-brands fa-css3-alt fa-css3-alt-hover" title="CSS3" alt="CSS3 icon"></i></li>
+                        <li class="tech-icons_items"><i class="fa-brands fa-js fa-js-hover" title="JavaScript" alt="JavaScript icon"></i></li>
+                        <li class="tech-icons_items"><i class="fa-brands fa-python fa-python-hover" title="Python" alt="Python icon"></i></li>
+                        <li class="tech-icons_items"><i class="fa-solid fa-database fa-database-hover" title="MySQL" alt="Database icon"></i></li>
+                        <li class="tech-icons_items"><i class="fa-brands fa-git fa-git-hover" title="Git" alt="Git icon"></i></li>
+                        <li class="tech-icons_items"><i class="fa-brands fa-figma fa-figma-hover" title="Figma" alt="Figma icon"></i></li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div class="screens" id="projects">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugiat nesciunt. Corrupti ducimus earum iusto facilis impedit ut quis! Quidem soluta quo, sit libero illum odio qui, neque earum aspernatur incidunt sunt accusantium laborum ipsa animi explicabo quam vero. Ad voluptates ipsum nostrum laboriosam nulla quam aliquid cum dicta natus!</p>
+                <iframe src="https://fxdevuk.github.io/TheYellow/" frameborder="0"></iframe>
+            </div>
+
+            <div class="screens" id="contact">
+                <div class="container">
+                    <form action="https://formsubmit.co/e6aaa7afe4d88094f355a994f4d9cb34" method="POST">
+                        <h3>Contact</h3>
+                        <label for="fullname"></label>
+                        <input type="text" class="input-contact" id="fullname" name="fullname" placeholder="Full name" required>
+                
+                        <label for="company"></label>
+                        <input type="text" class="input-contact" id="company" name="company" placeholder="Company" required>
+                        
+                        <label for="telephone"></label>
+                        <input type="tel" class="input-contact" id="telephone" name="telephone" placeholder="Telephone" required>
+                        
+                        <label for="email"></label>
+                        <input type="email" class="input-contact" id="email" name="email" placeholder="E-mail" required>
+
+                        <label for="subject"></label>
+                        <textarea class="input-contact" id="subject" name="subject" placeholder="Write something..." required></textarea>
+                    
+                        <input id="submit-btn"  class="input-contact submit-btn-hover" type="submit" value="Submit">
+                    </form>
+                </div>
+                
+        </main>   
+    </div>
+</body>
+</html>
+
